@@ -1,10 +1,13 @@
 package claire.spring.domain;
 
 import claire.spring.domain.common.BaseEntity;
-import claire.spring.domain.enums.Gender;
-import claire.spring.domain.enums.SocialType;
-import jakarta.persistence.*;
+import claire.spring.domain.mapping.UserMission;
 import lombok.*;
+import claire.spring.domain.enums.*;
+import jakarta.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -12,7 +15,7 @@ import lombok.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 
-public class USER extends BaseEntity {
+public class User extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -42,5 +45,9 @@ public class USER extends BaseEntity {
     private String email;
 
     private Integer point;
+
+    // 관계 설정
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<UserMission> userMissionList = new ArrayList<>();
 
 }

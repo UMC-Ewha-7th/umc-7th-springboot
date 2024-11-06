@@ -1,8 +1,12 @@
 package claire.spring.domain;
 
 
+import claire.spring.domain.mapping.StoreLikes;
 import jakarta.persistence.*;
 import lombok.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Getter
@@ -23,5 +27,19 @@ public class Store {
 
     private String imgUrl;
 
-    private Float point;
+    private Float rating;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "category_id")
+    private Category category;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "region_id")
+    private Region region;
+
+    @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
+    private List<Mission> missionList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
+    private List<StoreLikes> storeLikesList = new ArrayList<>();
 }

@@ -1,7 +1,10 @@
 package claire.spring.domain;
 
 import claire.spring.domain.common.BaseEntity;
+import claire.spring.domain.mapping.StoreLikes;
+import claire.spring.domain.mapping.UserAgree;
 import claire.spring.domain.mapping.UserMission;
+import claire.spring.domain.mapping.UserPrefer;
 import lombok.*;
 import claire.spring.domain.enums.*;
 import jakarta.persistence.*;
@@ -27,6 +30,9 @@ public class User extends BaseEntity {
     @Column(nullable = false, length = 40)
     private String nickname;
 
+    @Column(nullable = false, length = 40)
+    private String address;
+
     @Column(nullable = false, length = 20)
     private String phone_num;
 
@@ -48,6 +54,21 @@ public class User extends BaseEntity {
 
     // 관계 설정
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<StoreLikes> storeLikesList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
     private List<UserMission> userMissionList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<UserAgree> userAgreeList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Review> reviewList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<Comment> commentList = new ArrayList<>();
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<UserPrefer> userPreferList = new ArrayList<>();
 
 }

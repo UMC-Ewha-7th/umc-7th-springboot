@@ -4,7 +4,6 @@ import claire.spring.domain.common.BaseEntity;
 import claire.spring.domain.mapping.UserMission;
 import jakarta.persistence.*;
 import lombok.*;
-import org.w3c.dom.Text;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,4 +31,8 @@ public class Mission extends BaseEntity {
 
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL)
     private List<UserMission> userMissionList = new ArrayList<>();
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "store_id")
+    private Store store;
 }

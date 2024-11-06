@@ -1,9 +1,8 @@
 package claire.spring.domain.mapping;
 
-import claire.spring.domain.Mission;
+import claire.spring.domain.Category;
 import claire.spring.domain.User;
 import claire.spring.domain.common.BaseEntity;
-import claire.spring.domain.enums.MissionStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -12,7 +11,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class UserMission extends BaseEntity {
+public class UserPrefer extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,9 +22,7 @@ public class UserMission extends BaseEntity {
     private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "mission_id")
-    private Mission mission;
+    @JoinColumn(name = "category_id")
+    private Category category;
 
-    @Enumerated(EnumType.STRING)
-    private MissionStatus status;
 }

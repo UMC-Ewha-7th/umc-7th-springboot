@@ -25,4 +25,15 @@ public class Review extends BaseEntity {
     private String body;
 
     private Float score;
+
+    @Override
+    public String toString() {
+        return "Review{" +
+                "id=" + id +
+                ", member=" + member.getName() +
+                ", store=" + store.getName() +
+                ", body='" + body + '\'' +
+                ", score=" + score +
+                '}';
+    }
 }

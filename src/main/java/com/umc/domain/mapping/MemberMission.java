@@ -28,4 +28,16 @@ public class MemberMission extends BaseEntity {
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR(15) DEFAULT 'CHALLENGING'")
     private MissionStatus status;
+
+    @Override
+    public String toString() {
+        return "MemberMission{" +
+                "id=" + id +
+                ", member=" + member.getName() +
+                ", mission_store=" + mission.getStore().getName() +
+                ", mission_spec=" + mission.getMissionSpec() +
+                ", mission_reward=" +mission.getReward() +
+                ", status=" + status +
+                '}';
+    }
 }

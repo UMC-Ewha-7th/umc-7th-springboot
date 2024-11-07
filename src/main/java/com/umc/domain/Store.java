@@ -32,6 +32,15 @@ public class Store extends BaseEntity {
 
     @OneToMany(mappedBy = "store", cascade = {CascadeType.ALL})
     private List<Mission> missionList = new ArrayList<>();
-    
 
+    @Override
+    public String toString() {
+        return "Store{" +
+                "id=" + id +
+                ", region=" + region.getName() +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", score=" + score +
+                '}';
+    }
 }

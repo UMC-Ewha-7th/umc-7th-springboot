@@ -4,8 +4,6 @@ public enum SocialType {
     KAKAO,
     GOOGLE,
     NAVER,
-    APPLE;
+    APPLE
 
-    private SocialType() {
-    }
 }

@@ -1,11 +1,12 @@
 package claire.spring.repository.StoreRepository;
 
+import claire.spring.domain.QStore;
 import claire.spring.domain.Store;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
-import claire.spring.domain.QStore;
+
 
 import java.util.List;
 
@@ -17,6 +18,7 @@ public class StoreRepositoryImpl implements StoreRepositoryCustom{
 
     @Override
     public List<Store> dynamicQueryWithBooleanBuilder(String name, Float rating) {
+        BooleanBuilder predicate = new BooleanBuilder();
 
         if(name != null) {
             predicate.and(store.name.eq(name));

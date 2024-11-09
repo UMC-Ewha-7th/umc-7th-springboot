@@ -22,6 +22,10 @@ public class Review extends BaseEntity {
     @JoinColumn(name = "user_id")
     private User user;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "mission_id")
+    private Mission mission;
+
     @Column(nullable = false, length = 100)
     private String Title;
 

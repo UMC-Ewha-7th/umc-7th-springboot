@@ -42,4 +42,14 @@ public class Store {
 
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
     private List<StoreLikes> storeLikesList = new ArrayList<>();
+
+    public String toString() {
+        return "Store{" +
+                "id = " + id +
+                ", name = '" + name + '\'' +
+                ", address = '" + address + '\'' +
+                ", score = " + rating +
+                ", region = " + (region != null ? region.getName() : "N/A") +
+                '}';
+    }
 }

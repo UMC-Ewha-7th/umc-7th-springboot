@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c809fd4a-744d-47a8-b281-bd12a25c2942" name="Changes" comment="[6주차] 오류 해결 &amp; 워크북 실습 완료">
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/MissionRepository/MissionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/MissionRepository/MissionRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/MissionRepository/MissionRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/MissionService/MissionQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/MissionService/MissionQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+    <list default="true" id="c809fd4a-744d-47a8-b281-bd12a25c2942" name="Changes" comment="[6주차] Mission1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/ReviewRepository/ReviewRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/ReviewRepository/ReviewRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/ReviewRepository/ReviewRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/ReviewService/ReviewQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/ReviewService/ReviewQueryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/domain/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/domain/Mission.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,12 +76,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2oEDUJacyWPd4i8zoaBXgTgP4Ob" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -220,7 +221,7 @@
       <workItem from="1730847626375" duration="24805000" />
       <workItem from="1731070341067" duration="398000" />
       <workItem from="1731070758324" duration="2592000" />
-      <workItem from="1731167457597" duration="9147000" />
+      <workItem from="1731167457597" duration="10870000" />
     </task>
     <task id="LOCAL-00001" summary="✨DB 설계">
       <option name="closed" value="true" />
@@ -262,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731168137865</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[6주차] Mission1">
+      <option name="closed" value="true" />
+      <created>1731255537455</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731255537455</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +293,7 @@
     <MESSAGE value="[6주차] QueryDSL 기본 설정" />
     <MESSAGE value="[6주차] QueryDSL" />
     <MESSAGE value="[6주차] 오류 해결 &amp; 워크북 실습 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value="[6주차] 오류 해결 &amp; 워크북 실습 완료" />
+    <MESSAGE value="[6주차] Mission1" />
+    <option name="LAST_COMMIT_MESSAGE" value="[6주차] Mission1" />
   </component>
 </project>

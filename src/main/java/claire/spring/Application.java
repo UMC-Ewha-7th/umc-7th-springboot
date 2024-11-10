@@ -3,6 +3,7 @@ package claire.spring;
 import ch.qos.logback.core.net.SyslogOutputStream;
 import claire.spring.domain.enums.MissionStatus;
 import claire.spring.service.MissionService.MissionQueryService;
+import claire.spring.service.ReviewService.ReviewQueryService;
 import claire.spring.service.StoreService.StoreQueryService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -23,6 +24,7 @@ public class Application {
 	@Bean
 	public CommandLineRunner run(ApplicationContext context) {
 		return args -> {
+			/*
 			// StoreQueryService 실행
 			StoreQueryService storeService = context.getBean(StoreQueryService.class);
 
@@ -52,6 +54,18 @@ public class Application {
 			missionService.getMissionByUserIdAndStatus(userId, status, offset, limit)
 					.forEach(System.out::println);
 
+			*/
+			// ReviewQueryService 실행
+			ReviewQueryService reviewService = context.getBean(ReviewQueryService.class);
+			Long userId = 1L;
+			Long missionId = 3L;
+			Float rating = 4.7f;
+			String title = "추천합니당";
+			String content = "맛있어요! 정말 최고예요!";
+			String imgUrl = "http://example.com/image.jpg";
+
+			reviewService.insertReview(userId, missionId, rating, title, content, imgUrl);
+			System.out.println("Review added successfully!");
 		};
 	}
 }

@@ -4,28 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c809fd4a-744d-47a8-b281-bd12a25c2942" name="Changes" comment="[6주차] QueryDSL">
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/StoreService/StoreQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/StoreService/StoreQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+    <list default="true" id="c809fd4a-744d-47a8-b281-bd12a25c2942" name="Changes" comment="[6주차] 오류 해결 &amp; 워크북 실습 완료">
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/MissionRepository/MissionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/MissionRepository/MissionRepositoryCustom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/MissionRepository/MissionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/MissionService/MissionQueryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/MissionService/MissionQueryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/spring.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/domain/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/domain/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/repository/StoreRepository/StoreRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/StoreRepository/StoreRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/repository/StoreRepository/StoreRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/StoreRepository/StoreRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/domain/Mission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/domain/Mission.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +220,7 @@
       <workItem from="1730847626375" duration="24805000" />
       <workItem from="1731070341067" duration="398000" />
       <workItem from="1731070758324" duration="2592000" />
-      <workItem from="1731167457597" duration="415000" />
+      <workItem from="1731167457597" duration="9147000" />
     </task>
     <task id="LOCAL-00001" summary="✨DB 설계">
       <option name="closed" value="true" />
@@ -266,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730997067717</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[6주차] 오류 해결 &amp; 워크북 실습 완료">
+      <option name="closed" value="true" />
+      <created>1731168137865</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731168137865</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +283,7 @@
     <MESSAGE value="✨DB 설계" />
     <MESSAGE value="[6주차] QueryDSL 기본 설정" />
     <MESSAGE value="[6주차] QueryDSL" />
-    <option name="LAST_COMMIT_MESSAGE" value="[6주차] QueryDSL" />
+    <MESSAGE value="[6주차] 오류 해결 &amp; 워크북 실습 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="[6주차] 오류 해결 &amp; 워크북 실습 완료" />
   </component>
 </project>

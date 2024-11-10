@@ -1,6 +1,7 @@
 package claire.spring.domain;
 
 import claire.spring.domain.common.BaseEntity;
+import claire.spring.domain.enums.MissionStatus;
 import claire.spring.domain.mapping.UserMission;
 import jakarta.persistence.*;
 import lombok.*;
@@ -29,10 +30,24 @@ public class Mission extends BaseEntity {
 
     private LocalDate deadline;
 
+    @Enumerated(EnumType.STRING)
+    private MissionStatus status = MissionStatus.CHALLENGING;
+
     @OneToMany(mappedBy = "mission", cascade = CascadeType.ALL)
     private List<UserMission> userMissionList = new ArrayList<>();
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "store_id")
     private Store store;
+
+    public String toString() {
+        return "Mission{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", content='" + content + '\'' +
+                ", storeId=" + store.getId() +
+                ", point=" + point +
+                ", deadline=" + deadline +
+                '}';
+    }
 }

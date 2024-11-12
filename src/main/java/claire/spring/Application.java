@@ -2,11 +2,13 @@ package claire.spring;
 
 import ch.qos.logback.core.net.SyslogOutputStream;
 import claire.spring.domain.dtos.HomeDto;
+import claire.spring.domain.dtos.UserDto;
 import claire.spring.domain.enums.MissionStatus;
 import claire.spring.service.HomeService.HomeQueryService;
 import claire.spring.service.MissionService.MissionQueryService;
 import claire.spring.service.ReviewService.ReviewQueryService;
 import claire.spring.service.StoreService.StoreQueryService;
+import claire.spring.service.UserService.UserQueryService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -68,7 +70,6 @@ public class Application {
 
 			reviewService.insertReview(userId, missionId, rating, title, content, imgUrl);
 			System.out.println("Review added successfully!");
-			*/
 
 			// HomeQueryService 실행
 			HomeQueryService homeService = context.getBean(HomeQueryService.class);
@@ -91,6 +92,19 @@ public class Application {
 				System.out.println("Deadline: " + mission.getDeadline());
 				System.out.println("----------");
 			});
+			*/
+			// UserQueryService 실행
+			UserQueryService userService = context.getBean(UserQueryService.class);
+			Long userId = 1L;
+
+			UserDto userInfo = userService.getUserInfo(userId);
+			System.out.println("User Name: " + userInfo.getName());
+			System.out.println("User Nickname: " + userInfo.getNickname());
+			System.out.println("User Email: " + userInfo.getEmail());
+			System.out.println("address: " + userInfo.getAddress());
+			System.out.println("phone_num: " + userInfo.getPhoneNum());
+			System.out.println("User point: " + userInfo.getPoint());
+			System.out.println("----------");
 		};
 	}
 }

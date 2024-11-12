@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c809fd4a-744d-47a8-b281-bd12a25c2942" name="Changes" comment="[6주차] Mission3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/domain/dtos/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/UserRepository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/UserRepository/UserRepositoryCustom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/repository/UserRepository/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/UserService/UserQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/UserService/UserQueryServiceImpl.java" afterDir="false" />
+    <list default="true" id="c809fd4a-744d-47a8-b281-bd12a25c2942" name="Changes" comment="[6주차] Mission4">
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/code/BaseCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/code/BaseErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/code/ErrorReasonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/code/ReasonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/code/status/ErrorStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/code/status/SuccessStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/exception/ExceptionAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/exception/GeneralException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/exception/handler/TempHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/converter/TempConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/web/controller/TempController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/web/dto/TempRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/web/dto/TempResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,8 +69,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -71,7 +78,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Chapter5" />
+        <entry key="$PROJECT_DIR$" value="Chapter6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -105,7 +112,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.Application.executor": "Run",
-    "git-widget-placeholder": "Chapter6",
+    "git-widget-placeholder": "Chapter7",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -127,6 +134,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="claire.spring.ApiPayload.exception" />
+      <recent name="claire.spring.ApiPayload.code" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
@@ -221,7 +232,7 @@
       <workItem from="1730847626375" duration="24805000" />
       <workItem from="1731070341067" duration="398000" />
       <workItem from="1731070758324" duration="2592000" />
-      <workItem from="1731167457597" duration="19404000" />
+      <workItem from="1731167457597" duration="23327000" />
     </task>
     <task id="LOCAL-00001" summary="✨DB 설계">
       <option name="closed" value="true" />
@@ -287,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731395837649</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[6주차] Mission4">
+      <option name="closed" value="true" />
+      <created>1731398922507</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731398922507</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +331,7 @@
     <MESSAGE value="[6주차] Mission1" />
     <MESSAGE value="[6주차] Mission2" />
     <MESSAGE value="[6주차] Mission3" />
-    <option name="LAST_COMMIT_MESSAGE" value="[6주차] Mission3" />
+    <MESSAGE value="[6주차] Mission4" />
+    <option name="LAST_COMMIT_MESSAGE" value="[6주차] Mission4" />
   </component>
 </project>

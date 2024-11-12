@@ -1,7 +1,9 @@
 package claire.spring;
 
 import ch.qos.logback.core.net.SyslogOutputStream;
+import claire.spring.domain.dtos.HomeDto;
 import claire.spring.domain.enums.MissionStatus;
+import claire.spring.service.HomeService.HomeQueryService;
 import claire.spring.service.MissionService.MissionQueryService;
 import claire.spring.service.ReviewService.ReviewQueryService;
 import claire.spring.service.StoreService.StoreQueryService;
@@ -54,7 +56,7 @@ public class Application {
 			missionService.getMissionByUserIdAndStatus(userId, status, offset, limit)
 					.forEach(System.out::println);
 
-			*/
+
 			// ReviewQueryService 실행
 			ReviewQueryService reviewService = context.getBean(ReviewQueryService.class);
 			Long userId = 1L;
@@ -66,6 +68,29 @@ public class Application {
 
 			reviewService.insertReview(userId, missionId, rating, title, content, imgUrl);
 			System.out.println("Review added successfully!");
+			*/
+
+			// HomeQueryService 실행
+			HomeQueryService homeService = context.getBean(HomeQueryService.class);
+			Long userId = 1L;
+			Long regionId = 2L;
+			int offset = 0;
+			int limit = 15;
+
+			HomeDto homeInfo = homeService.getHomeInfo(userId, regionId, offset, limit);
+			System.out.println("User Points: " + homeInfo.getUserPoints());
+			System.out.println("User Name: " + homeInfo.getUserName());
+			System.out.println("Region Name: " + homeInfo.getRegionName());
+
+			System.out.println("Available Missions:");
+			homeInfo.getMissions().forEach(mission -> {
+				System.out.println("Store Name: " + mission.getStoreName());
+				System.out.println("Category Name: " + mission.getCategoryName());
+				System.out.println("Mission Content: " + mission.getMissionContent());
+				System.out.println("Point: " + mission.getMissionPoints());
+				System.out.println("Deadline: " + mission.getDeadline());
+				System.out.println("----------");
+			});
 		};
 	}
 }

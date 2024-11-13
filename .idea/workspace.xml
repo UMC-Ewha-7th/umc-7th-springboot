@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c809fd4a-744d-47a8-b281-bd12a25c2942" name="Changes" comment="[7주차] 실습">
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/TempService/TempCommandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/TempService/TempCommandServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/TempService/TempQueryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/claire/spring/service/TempService/TempQueryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+    <list default="true" id="c809fd4a-744d-47a8-b281-bd12a25c2942" name="Changes" comment="[7주차] API 응답 통일 &amp; 에러 핸들러">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/code/status/ErrorStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/ApiPayload/code/status/ErrorStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/claire/spring/web/controller/TempController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/claire/spring/web/controller/TempController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +64,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Chapter6" />
+        <entry key="$PROJECT_DIR$" value="Chapter7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,40 +83,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Gradle.Build umc-7th-springboot.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.umc-7th-springboot [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.umc-7th-springboot [dependencies].executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Chapter7&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Gradle.Build umc-7th-springboot.executor": "Run",
+    "Gradle.umc-7th-springboot [clean].executor": "Run",
+    "Gradle.umc-7th-springboot [dependencies].executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Application.executor": "Run",
+    "git-widget-placeholder": "Chapter8",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
@@ -231,7 +223,7 @@
       <workItem from="1731454406180" duration="427000" />
       <workItem from="1731454843295" duration="1038000" />
       <workItem from="1731455890067" duration="167000" />
-      <workItem from="1731456060139" duration="320000" />
+      <workItem from="1731456060139" duration="1325000" />
     </task>
     <task id="LOCAL-00001" summary="✨DB 설계">
       <option name="closed" value="true" />
@@ -313,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731402793098</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[7주차] API 응답 통일 &amp; 에러 핸들러">
+      <option name="closed" value="true" />
+      <created>1731456431039</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1731456431039</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +340,7 @@
     <MESSAGE value="[6주차] Mission3" />
     <MESSAGE value="[6주차] Mission4" />
     <MESSAGE value="[7주차] 실습" />
-    <option name="LAST_COMMIT_MESSAGE" value="[7주차] 실습" />
+    <MESSAGE value="[7주차] API 응답 통일 &amp; 에러 핸들러" />
+    <option name="LAST_COMMIT_MESSAGE" value="[7주차] API 응답 통일 &amp; 에러 핸들러" />
   </component>
 </project>

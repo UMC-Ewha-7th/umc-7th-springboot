@@ -25,4 +25,14 @@ public class UserPrefer extends BaseEntity {
     @JoinColumn(name = "category_id")
     private Category category;
 
+    public void setUser(User user) {
+        if(this.user != null)
+            user.getUserPreferList().remove(this);
+        this.user = user;
+        user.getUserPreferList().add(this);
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 }
